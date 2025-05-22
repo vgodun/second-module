@@ -52,7 +52,6 @@ CORS_ALLOW_METHODS = [
 
 USE_X_FORWARDED_HOST = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'http')
-
 ROOT_URLCONF = 'backend_redis.urls'
 ROOT_HOSTCONF = 'backend_redis.hosts'
 DEFAULT_HOST = 'default'
