@@ -55,6 +55,7 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'http')
 ROOT_URLCONF = 'backend_redis.urls'
 ROOT_HOSTCONF = 'backend_redis.hosts'
 DEFAULT_HOST = 'default'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',

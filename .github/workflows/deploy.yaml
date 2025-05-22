@@ -64,7 +64,7 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Log in to Amazon ECR
-        run: aws ecr get-login-password --region ${{ secrets.AWS_REGION }} | docker login --username AWS --password-stdin ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com
+        run: aws ecr get-login-password --region eu-central-1 | docker login --username AWS --password-stdin 692771913161.dkr.ecr.eu-central-1.amazonaws.com
 
       - name: Build and push Docker image for backend_rds
         run: |
