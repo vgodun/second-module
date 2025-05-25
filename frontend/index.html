@@ -375,7 +375,6 @@
         const host = getHost(endpoint.id);
         const url = `${host}/test_connection/?host=${encodeURIComponent(host)}`;
         setHTML(getElement(`${endpoint.id}-result`), createLoaderHTML(endpoint.name));
-        
         try {
           const response = await fetch(url, {
             method: 'GET',

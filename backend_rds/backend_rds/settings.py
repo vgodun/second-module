@@ -82,7 +82,6 @@ TEMPLATES = [
         },
     },
 ]
-
 WSGI_APPLICATION = 'backend_rds.wsgi.application'
 
 # Database
